@@ -1,13 +1,26 @@
 import "./App.css";
+import { Sky } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Physics } from "@react-three/cannon";
+import Ground from "./components/Ground/Ground";
+import Player from "./components/Player/Player";
+import FPV from "./components/FPV/FPV";
 
-function App() {
+const App = () => {
   return (
     <>
-      <div>Outside Canvas</div>
-      <Canvas></Canvas>
+      <Canvas>
+        <Sky sunPosition={[100, 100, 20]} />
+        <ambientLight intensity={0.5} />
+        <FPV />
+        <Physics>
+          <Player />
+          <Ground />
+        </Physics>
+      </Canvas>
+      <div className="absolute centered cursor">+</div>
     </>
   );
-}
+};
 
 export default App;

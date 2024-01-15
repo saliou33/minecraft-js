@@ -1,13 +1,13 @@
 # Minecraft with React and ThreeJs
 
-## THINGS TO BE DONE
+## TODO LIST
 
-- [] Boilerplate
-- [] Sky
-- [] Textures and images
-- [] Ground
-- [] Player
-- [] First person view
+- [x] Sky
+- [x] Textures and images
+- [x] Ground
+- [x] Player
+- [x] Keyboard inputs
+- [x] First person view
 - [] Gravity
 - [] Movement
 - [] State management
