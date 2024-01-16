@@ -23,6 +23,6 @@ export {
   grassTexture,
   glassTexture,
   woodTexture,
-  logTexture,
   groundTexture,
+  logTexture,
 };

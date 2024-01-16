@@ -53,3 +53,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.texture-selector {
+  transform: scale(3);
+}
+
+.texture-selector img.active {
+  border: 2px solid brown;
+}
